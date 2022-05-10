@@ -12,4 +12,4 @@
 
 **Где найти?**
 
-* [Ссылка на проект на GitHub Pages](https://kirill-kalyuga-spb.github.io/mesto)
+* [Ссылка на проект на GitHub Pages](https://kirill-kalyuga-spb.github.io/mesto-project)
