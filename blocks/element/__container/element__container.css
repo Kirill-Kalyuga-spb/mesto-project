@@ -1,0 +1,12 @@
+.element__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px 15px 31px 21px;
+}
+
+@media all and (max-width: 425px) {
+    .element__container {
+        margin: 20px 15px 27px 21px;
+    }
+}

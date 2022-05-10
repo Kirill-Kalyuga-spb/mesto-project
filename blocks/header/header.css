@@ -1,0 +1,13 @@
+.header {
+    margin: 45px 0px 36.25px;
+    display: flex;
+    flex-direction: column;
+    
+    border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+}
+
+@media all and (max-width: 425px) {
+    .header {
+        margin: 28px 0 38.25px 0;
+    }
+}

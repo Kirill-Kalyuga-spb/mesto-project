@@ -1,0 +1,11 @@
+.footer {
+    width: 100%;
+    margin: 0 0 60px;
+}
+
+@media all and (max-width: 425px) {
+    .footer {
+        width: calc(100% - 38px);
+        margin: 0 19px 36px;
+    }
+}

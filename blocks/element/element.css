@@ -1,0 +1,13 @@
+.element {
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+
+    overflow: hidden;
+}
+
+@media all and (max-width: 425px) {
+    .element {
+        margin: 0 19px;
+    }
+}

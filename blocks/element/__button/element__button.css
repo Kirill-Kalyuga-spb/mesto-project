@@ -1,0 +1,24 @@
+.element__button {
+    border: none;
+    background-color: white;
+    min-width: 22px;
+    width: 22px;
+    cursor: pointer;
+
+    background-size: 22px 19px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../../images/element-heart-disabled.svg);
+}
+
+.element__button:hover {
+    opacity: 0.5;
+}
+
+@media all and (max-width: 425px) {
+    .element__button {
+        padding: 0;
+        margin-right: 5px;
+        margin-top: 1px;
+    }
+}
