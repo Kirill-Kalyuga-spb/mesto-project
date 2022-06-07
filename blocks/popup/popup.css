@@ -13,6 +13,8 @@
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-name: fadeInn;
+
+    transition: visibility 1.5s, opacity 1.5s linear; 
 }
 
 @keyframes fadeInn {

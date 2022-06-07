@@ -2,6 +2,7 @@ const editor = document.querySelector('.profile__button-editor');
 const cardFormOpenButton = document.querySelector('.profile__plus-container');
 const closeIcon = document.querySelectorAll('.popup__button-close');
 const profilePopup = document.querySelector('div[name="popup-profile"]');
+const profileImage = document.querySelector('div[name="popup-image"]');
 const popupMesto = document.querySelector('div[name="popup-mesto"]');
 
 const formProfileElement = document.querySelector('form[name="form-profile"]');
@@ -97,20 +98,15 @@ function addToPage() {
 }
 
 function addImg(name, link) {
-    const elementTemplate = document.querySelector('#template-popup-img').content.cloneNode(true);
-    elementTemplate.querySelector('.popup__img').src = link;
-    elementTemplate.querySelector('.popup__img-name').textContent = name;
+    profileImage.querySelector('.popup__img').src = link;
+    profileImage.querySelector('.popup__img-name').textContent = name;
 
-    const buttonClose = elementTemplate.querySelector('.popup__button-close');
+    const buttonClose = profileImage.querySelector('.popup__button-close');
 
     buttonClose.addEventListener('click', function() {
-        buttonClose.closest('.popup').classList.toggle('popup_transition');
-        buttonClose.closest('.popup').classList.toggle('popup_opened');
-        function popupCloseImg() {buttonClose.closest('.popup').remove();}
-        setTimeout(popupCloseImg, 1000);
+        buttonClose.closest('.popup').classList.remove('popup_opened');
     });
-    elementTemplate.querySelector('.popup').classList.toggle('popup_opened');
-    document.querySelector('.page').append(elementTemplate);
+    profileImage.classList.toggle('popup_opened');
 };
 
 window.addEventListener('load', ()=>{
